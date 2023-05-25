@@ -12,3 +12,5 @@ Refer to [this](https://en.wikipedia.org/wiki/Hangman_(game)) Wikipedia article 
 There are two approaches that comes to my mind for solving this problem. One is using reinforcement learning or casting the problem as supervised learning.
 Since by the time I am working on this project I am not that familiar with reinforcement learning I decided to use the second approach.
 During inference, the model I designed will output probability of letters existing on the word for a given state of the game and greedily select based on this probability.
+
+I trained a neural network to play Hangman by appropriately guessing letters in a partially or fully obscured word. The network receives as input a representation of the word (total number of characters, the identity of any revealed letters) as well as a list of which letters have been guessed so far. It returns a guess for the letter that should be picked next.
